@@ -1,0 +1,432 @@
+@charset "utf-8";
+body {
+    background: #f5f5f5;
+}
+
+
+/* 右边导航栏 */
+
+#leftBar {
+    position: fixed;
+    display: none;
+    width: 60px;
+    text-align: center;
+    top: 60%;
+    line-height: 28px;
+    right: 15px;
+    z-index: 999;
+    background-color: white;
+    .current {
+        a {
+            border: 1px solid #ed5759;
+            line-height: 34px;
+            color: #ed5759;
+            background-color: #fdeeee;
+            .floor_s {
+                display: none;
+            }
+            .floor_h {
+                display: block;
+            }
+        }
+    }
+    .current1 {
+        a {
+            border: 1px solid #ed5759;
+            line-height: 34px;
+            color: #ed5759;
+            background-color: #fdeeee;
+            .floor_s {
+                display: none;
+            }
+            .floor_h {
+                display: block;
+            }
+        }
+    }
+    a {
+        display: block;
+        border: 1px solid #dedede;
+        line-height: 34px;
+        color: #ed5759;
+        overflow: hidden;
+        margin-bottom: 2px;
+        .floor_h {
+            display: none
+        }
+    }
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    .title-font {
+        font-size: 18px;
+        margin: 14px 0;
+        color: #757575;
+    }
+    .cursor {
+        cursor: pointer;
+    }
+}
+
+
+/* 热销推荐*/
+
+#guessLove {
+    .rx {
+        width: 1200px;
+        height: 180px;
+        margin: 0 auto;
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+        ul {
+            width: 1210px;
+            margin: 0px;
+            padding: 0px;
+            li {
+                width: 295px;
+                height: 180px;
+                float: left;
+                margin-right: 7px;
+                a {
+                    color: #747474;
+                    outline: none;
+                    text-decoration: none;
+                    img {
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 每日精选 */
+
+.mrjx {
+    width: 1200px;
+    height: 570px;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    a {
+        color: #747474;
+        outline: none;
+        text-decoration: none;
+    }
+    .mrjx1 {
+        width: 300px;
+        height: 570px;
+        padding-right: 10px;
+        float: left;
+        img:hover {
+            opacity: 0.8;
+        }
+        #spike {
+            background: #e83632;
+            color: #fff;
+            .spike-left {
+                position: relative;
+                float: left;
+                width: 300px;
+                height: 570px;
+                background: #e83632;
+                color: #fff;
+                .spike-left-link {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    .spike-left-link-tit {
+                        position: absolute;
+                        font-family: 'fzzxh';
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        top: 100px;
+                        font-size: 34px;
+                        color: #fff;
+                        span {
+                            width: 46px;
+                            height: 46px;
+                            background: #605751;
+                            color: #fff;
+                            font-size: 24px;
+                            line-height: 46px;
+                            float: left;
+                            text-align: center;
+                        }
+                        i {
+                            width: 15px;
+                            float: left;
+                            height: 46px;
+                            line-height: 46px;
+                            color: #605751;
+                            font-size: 28px;
+                            font-style: normal;
+                        }
+                    }
+                    .spike-left-link-dis {
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        top: 150px;
+                        color: #f19999;
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 20px;
+                    }
+                    .sk_ico {
+                        position: absolute;
+                        left: 45%;
+                        top: 200px;
+                        display: block;
+                        width: 20px;
+                        height: 33px;
+                        background-image: url(../images/index/sprite.seckill_r2_c2.png);
+                        background-position: -3px -19px;
+                    }
+                }
+            }
+        }
+    }
+    .mrjx2 {
+        width: 590px;
+        height: 570px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        float: left;
+        .top1 {
+            width: 590px;
+            height: 280px;
+            padding-bottom: 10px;
+            float: left;
+            img {
+                width: 590px;
+                height: 280px;
+                padding-bottom: 10px;
+                float: left;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .bottom1 {
+            width: 290px;
+            height: 280px;
+            padding-right: 10px;
+            float: left;
+            img {
+                width: 290px;
+                height: 280px;
+                padding-right: 10px;
+                float: left;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .bottom2 {
+            width: 290px;
+            height: 280px;
+            float: left;
+            img {
+                width: 290px;
+                height: 280px;
+                float: left;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .mrjx3 {
+        width: 290px;
+        height: 570px;
+        float: left;
+        .top1 {
+            width: 290px;
+            height: 280px;
+            float: left;
+            padding-bottom: 10px;
+            img {
+                width: 290px;
+                height: 280px;
+                float: left;
+                padding-bottom: 10px;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        .bottom1 {
+            width: 290px;
+            height: 280px;
+            float: left;
+            img {
+                width: 290px;
+                height: 280px;
+                float: left;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+
+/* 楼层开始 */
+
+#floors {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    .Floor_product {
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        img:hover {
+            opacity: 0.8;
+        }
+        .floor_nav {
+            margin: 26px 0 9px;
+            .floor {
+                height: 26px;
+                line-height: 26px;
+                overflow: hidden;
+                background: #f5f5f5;
+                float: left;
+                margin-right: 12px;
+                a {
+                    margin-left: 10px;
+                    font-size: 14px;
+                    font-family: "黑体";
+                    color: #747474;
+                }
+                b {
+                    width: 37px;
+                    height: 26px;
+                    text-align: center;
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+            .FloorList-tit {
+                margin-left: 12px;
+                width: 985px;
+                height: 26px;
+                background: #f5f5f5;
+                ul {
+                    width: 988px;
+                    height: 26px;
+                    margin: 0px;
+                    padding: 0px;
+                    li {
+                        height: 26px;
+                        color: #757575;
+                        line-height: 26px;
+                        float: left;
+                        font-size: 12px;
+                        position: relative;
+                        cursor: pointer;
+                        &:hover {
+                            color: #cc0000;
+                            border-bottom: 2px solid #cc0000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 楼层结束 */
+
+
+/* 底部视频 */
+
+.index_videos {
+    img:hover {
+        opacity: 0.8;
+    }
+    h3 {
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .list {
+        overflow: hidden;
+        ul {
+            width: 1500px;
+            li {
+                width: 280px;
+                overflow: hidden;
+                margin-right: 26.67px;
+                float: left;
+                background: #ffffff;
+                .pic {
+                    width: 100%;
+                    max-height: 160px;
+                    position: relative;
+                    cursor: pointer;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        max-height: 160px;
+                        display: block;
+                    }
+                }
+                h4 {
+                    font-size: 14px;
+                    color: #666666;
+                    padding-top: 10px;
+                    text-align: center;
+                    font-weight: normal;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Boss */
+
+.indexfoot_Reputation {
+    width: 1200px;
+    margin: 30px auto 0;
+    height: auto;
+    overflow: hidden;
+    img:hover {
+        opacity: .8;
+    }
+    ul {
+        margin-top: 26px;
+        overflow: hidden;
+        padding: 40px 0;
+        background-color: #fff;
+        li {
+            width: 25%;
+            border-right: 1px solid #dedede;
+            padding: 0 25px;
+            box-sizing: border-box;
+            float: left;
+            a {
+                color: #747474;
+                outline: none;
+                text-decoration: none;
+            }
+        }
+    }
+}
